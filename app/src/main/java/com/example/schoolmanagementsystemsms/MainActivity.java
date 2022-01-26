@@ -12,7 +12,7 @@ import android.widget.Toast;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toast.makeText(this, "Muhammad Usama", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Usama", Toast.LENGTH_SHORT).show();
 
 
     }
