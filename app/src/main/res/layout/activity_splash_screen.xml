@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/purple_200"
+    android:background="#FFEB3B"
     tools:context=".SplashScreen">
 
     <TextView
@@ -13,9 +13,9 @@
         android:layout_height="wrap_content"
         android:text="School Management System"
         android:id="@+id/appname"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_margin="20sp"/>
 
