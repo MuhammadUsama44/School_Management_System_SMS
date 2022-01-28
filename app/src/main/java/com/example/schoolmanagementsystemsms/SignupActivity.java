@@ -47,7 +47,7 @@ public class SignupActivity extends AppCompatActivity {
         Postal_Zip = findViewById(R.id.Postal_Zip);
         Phone_Number = findViewById(R.id.Phone_Number);
 
-        reference = FirebaseDatabase.getInstance().getReference().child("School Users DB");
+        reference = FirebaseDatabase.getInstance("https://db-school-management-system-default-rtdb.asia-southeast1.firebasedatabase.app").getReference().child("School Users DB");
 
         mAuth = FirebaseAuth.getInstance();
 
