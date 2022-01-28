@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/01 - FULL STACK ANDROID APPLICATION/SDA Semester Project SMS/app/src/main/res/layout/activity_forget_password.xml" value="0.17552083333333332" />
         <entry key="..\:/01 - FULL STACK ANDROID APPLICATION/SDA Semester Project SMS/app/src/main/res/layout/activity_login.xml" value="0.17552083333333332" />
         <entry key="..\:/01 - FULL STACK ANDROID APPLICATION/SDA Semester Project SMS/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
+        <entry key="..\:/01 - FULL STACK ANDROID APPLICATION/SDA Semester Project SMS/app/src/main/res/layout/activity_signup.xml" value="0.17552083333333332" />
         <entry key="..\:/01 - FULL STACK ANDROID APPLICATION/SDA Semester Project SMS/app/src/main/res/layout/activity_splash_screen.xml" value="0.16145833333333334" />
       </map>
     </option>
