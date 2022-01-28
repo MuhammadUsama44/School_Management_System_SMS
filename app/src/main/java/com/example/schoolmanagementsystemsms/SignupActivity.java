@@ -56,7 +56,6 @@ public class SignupActivity extends AppCompatActivity {
     }
 
 
-
     private Boolean validateEmail()
     {
         String Email = Email_SignUp.getEditText().getText().toString();
