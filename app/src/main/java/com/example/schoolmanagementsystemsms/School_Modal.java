@@ -2,7 +2,42 @@ package com.example.schoolmanagementsystemsms;
 
 public class School_Modal {
 
-    String Uid, Email, Password, First_Name, Last_Name, Address, Zip_Postal_Code, Phone, NAME, ID, DEPARTMENT, CLASS;
+    String Uid;
+    String Email;
+    String Password;
+    String First_Name;
+    String Last_Name;
+    String Address;
+    String Zip_Postal_Code;
+    String Phone;
+    String NAME;
+    String ID;
+    String DEPARTMENT;
+    String CLASS;
+    String Course_id;
+
+    public School_Modal(String course_id, String course_Name) {
+        Course_id = course_id;
+        Course_Name = course_Name;
+    }
+
+    public String getCourse_id() {
+        return Course_id;
+    }
+
+    public void setCourse_id(String course_id) {
+        Course_id = course_id;
+    }
+
+    public String getCourse_Name() {
+        return Course_Name;
+    }
+
+    public void setCourse_Name(String course_Name) {
+        Course_Name = course_Name;
+    }
+
+    String Course_Name;
 
     public School_Modal() { //Default Constructor For Firebase.
 
