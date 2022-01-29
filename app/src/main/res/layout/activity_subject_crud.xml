@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context=".Student_Crud">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="5.5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Crud Screen"
+            android:textSize="20sp"
+            android:layout_marginTop="5sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/text"/>
+
+        <EditText
+            android:id="@+id/courseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="5sp"
+            android:hint="CourseName"
+            android:inputType="text" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/courseName"
+            android:hint="Course ID"
+            android:inputType="text"
+            android:layout_margin="5sp"
+            android:id="@+id/courseID"/>
+
+
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/courseID"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="@color/black"
+            android:text="Add / Create Student" />
+
+
+        <Button
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Update Student"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/add_btn"
+            android:layout_marginTop="20sp"
+            android:id="@+id/update_btn"/>
+
+
+        <Button
+            android:id="@+id/view_btn"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/update_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="@color/black"
+            android:text="View Students" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="4.5">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Courses_LIST"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/error"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
