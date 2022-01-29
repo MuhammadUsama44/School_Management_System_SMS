@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context=".Student_Crud">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="6.5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Crud Screen"
+            android:textSize="20sp"
+            android:layout_marginTop="5sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/text"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:hint="Student Name"
+            android:inputType="text"
+            android:layout_margin="5sp"
+            android:id="@+id/Name"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name"
+            android:hint="Student ID"
+            android:inputType="text"
+            android:layout_margin="5sp"
+            android:id="@+id/ID"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ID"
+            android:hint="Student Department"
+            android:inputType="text"
+            android:layout_margin="5sp"
+            android:id="@+id/department"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/department"
+            android:hint="Student Class"
+            android:inputType="text"
+            android:layout_margin="5sp"
+            android:id="@+id/stu_class"/>
+
+        <Button
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Add / Create Student"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/stu_class"
+            android:layout_marginTop="20sp"
+            android:id="@+id/add_student_btn"/>
+
+
+        <Button
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Update Student"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/add_student_btn"
+            android:layout_marginTop="20sp"
+            android:id="@+id/update_stu_btn"/>
+
+
+        <Button
+            android:id="@+id/view_student_btn"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/update_stu_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="@color/black"
+            android:text="View Students"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="3.5">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Student_LIST"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/error_text"/>
+
+        </RelativeLayout>
+
+</LinearLayout>
