@@ -2,7 +2,7 @@ package com.example.schoolmanagementsystemsms;
 
 public class School_Modal {
 
-    String Uid, Email, Password, First_Name, Last_Name, Address, Zip_Postal_Code, Phone;
+    String Uid, Email, Password, First_Name, Last_Name, Address, Zip_Postal_Code, Phone, NAME, ID, DEPARTMENT, CLASS;
 
     public School_Modal() { //Default Constructor For Firebase.
 
@@ -17,6 +17,13 @@ public class School_Modal {
         Address = address;
         Zip_Postal_Code = zip_Postal_Code;
         Phone = phone;
+    }
+
+    public School_Modal(String NAME, String ID, String DEPARTMENT, String CLASS) {
+        this.NAME = NAME;
+        this.ID = ID;
+        this.DEPARTMENT = DEPARTMENT;
+        this.CLASS = CLASS;
     }
 
     public String getUid() {
@@ -82,4 +89,37 @@ public class School_Modal {
     public void setPhone(String phone) {
         Phone = phone;
     }
+
+    public String getNAME() {
+        return NAME;
+    }
+
+    public void setNAME(String NAME) {
+        this.NAME = NAME;
+    }
+
+    public String getID() {
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
+
+    public String getDEPARTMENT() {
+        return DEPARTMENT;
+    }
+
+    public void setDEPARTMENT(String DEPARTMENT) {
+        this.DEPARTMENT = DEPARTMENT;
+    }
+
+    public String getCLASS() {
+        return CLASS;
+    }
+
+    public void setCLASS(String CLASS) {
+        this.CLASS = CLASS;
+    }
+
 }

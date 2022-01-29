@@ -10,17 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SchoolManagementSystemSMS">
         <activity
-            android:name=".ForgetPasswordActivity"
+            android:name=".Subject_Crud"
             android:exported="false"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Student_Crud"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".SignupActivity"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".LoginActivity"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".SplashScreen"
             android:exported="true"
